@@ -115,9 +115,9 @@ def main(config_filename, arg_endstate):
 # COMMAND=/opt/hcloud-failover/hcloud_failover.py --config 1.conf INSTANCE LB_1 BACKUP 110
 def parse_args():
     parser = argparse.ArgumentParser(
-        prog="ProgramName",
-        description="What the program does",
-        epilog="Text at the bottom of help",
+        prog="Hetzner Cloud Failover switcher",
+        description="Reroutes the floating IPs to a selected server",
+        epilog="Use Python 3 and IPv6.",
     )
     parser.add_argument("--config", default=CONFIG_FILENAME)
     # Four positional arguments added by keepalived
